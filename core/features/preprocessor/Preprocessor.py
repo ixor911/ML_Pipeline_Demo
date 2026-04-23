@@ -160,7 +160,7 @@ class Preprocessor:
         build_ethbtc_if_missing: bool = True,
         add_cross_features: bool = True,
         add_volume_pack: bool = True,
-    ) -> str:
+    ) -> pd.DataFrame:
         """
         Runs the full preprocessing pipeline and saves the result to disk.
 
@@ -233,7 +233,7 @@ class Preprocessor:
             save_path = os.path.join(out_dir, f"{base_name}.csv")
             df.to_csv(save_path, index=False)
 
-        return save_path
+        return df
 
     # ---------- helpers ----------
 
