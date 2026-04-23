@@ -4,7 +4,7 @@ A modular machine learning pipeline for crypto signal generation, threshold opti
 
 This repository is a **demo version** of a larger private project. It showcases the core architecture and main ML workflow while intentionally simplifying or removing some production-oriented parts.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ixor911/ML_Pipeline_Demo/blob/main/demo.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ixor911/ML_Pipeline_Demo/demo.ipynb)
 
 ---
 
