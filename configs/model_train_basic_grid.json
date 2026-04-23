@@ -1,0 +1,54 @@
+{
+  "datapath": "ETHUSDT_6_1h.csv",
+
+  "slicing": {
+    "type": "candles",
+    "candles": [3000, 1000],
+    "from_tail": true,
+    "end_date": null,
+    "time_col": "open_time_eth"
+  },
+
+  "model": {
+    "task": "classification",
+    "hidden": {
+      "__grid__": [64, 32]
+    },
+    "depth": 3,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": {
+      "__grid__": [64, 128]
+    },
+    "epochs": 25,
+    "patience": 6,
+    "val_share": 0.2,
+    "seed": 42,
+    "verbose": false
+  },
+
+  "builder": {
+    "horizon": 1,
+    "tau_pct": [0.03, null],
+    "future_ret_col": "future_ret",
+    "regime_filter": ["trend_up"],
+    "feature_groups": {
+      "__grid__": [
+        ["eth_trend_core", "eth_macd_pack"],
+        ["eth_trend_core", "eth_rsi_vola_pack"],
+        ["eth_trend_core", "eth_return_core"],
+        ["eth_trend_core", "eth_range_dynamics"],
+        ["eth_trend_core", "eth_volume_flow_pack"],
+
+        ["eth_return_core", "eth_range_dynamics"],
+        ["eth_return_core", "eth_volume_flow_pack"],
+        ["eth_return_core", "eth_volume_anomaly_pack"],
+        ["eth_return_acceleration_pack", "eth_range_dynamics"],
+        ["eth_return_regime_pack", "eth_volume_flow_pack"]
+      ]
+    },
+    "features_include": null,
+    "extra_drop": null
+  }
+}

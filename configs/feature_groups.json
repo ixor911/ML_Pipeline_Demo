@@ -1,0 +1,140 @@
+{
+  "eth_trend_core": [
+    "ema12",
+    "ema26",
+    "sma20",
+    "sma50"
+  ],
+
+  "eth_macd_pack": [
+    "macd_line",
+    "signal_line",
+    "macd_hist"
+  ],
+
+  "eth_rsi_vola_pack": [
+    "rsi14",
+    "atr14_proxy_pct",
+    "bb_width_pct",
+    "pctB"
+  ],
+
+  "eth_return_core": [
+    "ret_1h_pct",
+    "ret_3h_pct",
+    "ret_6h_pct",
+    "ret_24h_pct"
+  ],
+
+  "eth_return_acceleration_pack": [
+    "ret_1h_pct",
+    "ret_3h_pct",
+    "ret_acceleration"
+  ],
+
+  "eth_return_regime_pack": [
+    "ret_24h_pct",
+    "trend_sign",
+    "is_high_vol",
+    "regime"
+  ],
+
+  "eth_range_dynamics": [
+    "range_pct",
+    "range_compression",
+    "wick_imbalance"
+  ],
+
+  "eth_volume_flow_pack": [
+    "vol_ret_1h_pct",
+    "vol_zscore_24",
+    "cmf20",
+    "mfi14"
+  ],
+
+  "eth_volume_anomaly_pack": [
+    "vol_vola_coupling",
+    "rvol_anom",
+    "rvol_anom_signed"
+  ],
+
+  "eth_wick_pressure_pack": [
+    "upper_wick_ratio",
+    "lower_wick_ratio",
+    "wick_imbalance",
+    "clv"
+  ],
+
+  "eth_reversal_candle_pack": [
+    "body_ratio",
+    "upper_wick_ratio",
+    "lower_wick_ratio",
+    "taker_delta_norm"
+  ],
+
+  "eth_breakout_candle_pack": [
+    "body_ratio",
+    "clv",
+    "range_pct",
+    "rvol20",
+    "bb_width_pct"
+  ],
+
+  "eth_absorption_candle_pack": [
+    "clv",
+    "taker_buy_ratio",
+    "rvol20",
+    "quote_per_trade"
+  ],
+
+  "btc_trend_core": [
+    "btc_ema12",
+    "btc_ema26",
+    "btc_sma20",
+    "btc_sma50"
+  ],
+
+
+  "btc_leadlag_pack": [
+    "btc_ret_1h_lag1",
+    "btc_ret_1h_lag2",
+    "btc_ret_1h_lag3"
+  ],
+
+  "btc_volume_pack": [
+    "volume_btc",
+    "btc_rvol20",
+    "btc_vol_zscore_24",
+    "btc_vol_vola_coupling"
+  ],
+
+  "ethbtc_trend_pack": [
+    "ethbtc_ema12",
+    "ethbtc_ema26",
+    "ethbtc_rsi14"
+  ],
+
+  "ethbtc_macd_pack": [
+    "ethbtc_macd_line",
+    "ethbtc_signal_line",
+    "ethbtc_macd_hist"
+  ],
+
+  "ethbtc_return_pack": [
+    "ethbtc_ret_1h_pct",
+    "ethbtc_ret_24h_pct"
+  ],
+
+  "cross_relative_strength_pack": [
+    "eth_ret_1h_pct",
+    "rs_1h_pct",
+    "rs_24h_pct"
+  ],
+
+  "cross_market_context_pack": [
+    "btc_ret_1h_pct",
+    "btc_shock_24h",
+    "rs_1h_pct",
+    "rs_24h_pct"
+  ]
+}

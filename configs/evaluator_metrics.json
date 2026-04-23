@@ -1,0 +1,32 @@
+{
+  "mcc": {
+    "optimize": "mcc",
+    "constraints": {
+      "signals_percent": { "min": 0.10 }
+    }
+  },
+  "tpr90": {
+    "optimize": "precision",
+    "constraints": {
+      "recall": { "min": 0.90 }
+    }
+  },
+  "signals10": {
+    "optimize": "precision",
+    "constraints": {
+      "signals_percent": { "min": 0.10 }
+    }
+  },
+  "signals20": {
+    "optimize": "precision",
+    "constraints": {
+      "signals_percent": { "min": 0.20 }
+    }
+  },
+  "abs_signals10": {
+    "optimize": "precision",
+    "constraints": {
+      "abs_signals": { "min": 0.10 }
+    }
+  }
+}

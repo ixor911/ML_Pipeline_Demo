@@ -331,7 +331,7 @@ if __name__ == "__main__":
     # ==========================================
     # CONFIG
     # ==========================================
-    MONTHS = 48
+    MONTHS = 6
     INTERVAL = "1h"
 
     USE_ETHBTC = True              # if False, ETHBTC will be built synthetically from ETH/BTC

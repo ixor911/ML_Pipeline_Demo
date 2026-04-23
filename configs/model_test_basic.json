@@ -1,0 +1,11 @@
+{
+  "datapath": "ETHUSDT_6_1h.csv",
+
+  "slicing": {
+    "type": "candles",
+    "candles": [1000],
+    "from_tail": true,
+    "end_date": null,
+    "time_col": "open_time_eth"
+  }
+}
