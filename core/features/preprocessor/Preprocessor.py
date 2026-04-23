@@ -151,7 +151,7 @@ class Preprocessor:
         interval: str = "1h",
         symbol: str = "ETHUSDT",  # target asset name used in the output filename
         out_dir: str = "data/processed",
-        fmt: str = "parquet",  # 'parquet' | 'csv'
+        fmt: str = "csv",  # 'parquet' | 'csv'
         window_anchor: int = 60,
         shock_k: float = 1.5,
         lead_lag: bool = True,
@@ -160,7 +160,7 @@ class Preprocessor:
         build_ethbtc_if_missing: bool = True,
         add_cross_features: bool = True,
         add_volume_pack: bool = True,
-    ) -> str:
+    ) -> pd.DataFrame:
         """
         Runs the full preprocessing pipeline and saves the result to disk.
 
@@ -233,7 +233,7 @@ class Preprocessor:
             save_path = os.path.join(out_dir, f"{base_name}.csv")
             df.to_csv(save_path, index=False)
 
-        return save_path
+        return df
 
     # ---------- helpers ----------
 
