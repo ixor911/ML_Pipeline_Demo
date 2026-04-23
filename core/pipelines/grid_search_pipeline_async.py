@@ -92,14 +92,6 @@ def print_models_ram_metrics(
                 "signals_percent": metrics.get("signals_percent"),
                 "abs_signals": metrics.get("abs_signals"),
                 "abs_percent": metrics.get("abs_percent"),
-
-                # Selector-level ranking information.
-                "score_raw": selector.get("score_raw"),
-                "score_norm": selector.get("score_norm"),
-                "constraint_fit": selector.get("constraint_fit"),
-                "final_score": selector.get("final_score"),
-                "constraints_passed": selector.get("passed"),
-                "violations_count": selector.get("violations_count"),
             }
 
             rows.append(row)
